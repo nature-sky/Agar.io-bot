@@ -25,7 +25,7 @@ function getLatestCommit() {
 			var latestVersion = data.replace(/(\r\n|\n|\r)/gm, "");
 			latestVersion = latestVersion.substring(latestVersion.indexOf("// @version") + 11, latestVersion.indexOf("// @grant"));
 			latestVersion = parseFloat(latestVersion + 0.0000);
-			var script1 = "https://cdn.jsdelivr.net/gh/nature-sky/Agar.io-bot/launcher.user.js";
+			var script1 = "https://raw.githubusercontent.com/nature-sky/Agar.io-bot/master/launcher.user.js";
 			console.log("Script: " + script1);
 			window.jQuery("body").append('<script type="text/javascript" src="' + script1 + '"></script>');
 		});
@@ -33,7 +33,7 @@ function getLatestCommit() {
 			var latestVersion = data.replace(/(\r\n|\n|\r)/gm, "");
 			latestVersion = latestVersion.substring(latestVersion.indexOf("// @version") + 11, latestVersion.indexOf("// @grant"));
 			latestVersion = parseFloat(latestVersion + 0.0000);
-			var script2 = "https://cdn.jsdelivr.net/gh/nature-sky/Agar.io-bot/bot.user.js";
+			var script2 = "https://raw.githubusercontent.com/nature-sky/Agar.io-bot/master/bot.user.js";
 			console.log("Script: " + script2);
 			window.jQuery("body").append('<script type="text/javascript" src="' + script2 + '"></script>');
 		});
