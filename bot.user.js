@@ -23,7 +23,7 @@ SOFTWARE.*/
 // ==UserScript==
 // @name        AposBot
 // @namespace   AposBot
-// @include     http://agar.io/*
+// @include     http://agar.io/*, http://agario.fun/*
 // @version     3.651
 // @grant       none
 // @author      http://www.twitch.tv/apostolique
@@ -58,7 +58,7 @@ window.log = function(message){
 var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 (function () {
     window.jQuery.ajax({
-            url: "https://api.github.com/repos/apostolique/Agar.io-bot/git/refs/heads/master",
+            url: "https://api.github.com/repos/nature-sky/Agar.io-bot/git/refs/heads/master",
             cache: false,
             dataType: "jsonp"
         }).done(function(data) {
@@ -78,7 +78,7 @@ var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
                 window.jQuery("#" + prefix + "Dialog").show();
             }
 
-            $.get('https://raw.githubusercontent.com/Apostolique/Agar.io-bot/master/bot.user.js?' + Math.floor((Math.random() * 1000000) + 1), function(data) {
+            $.get('https://raw.githubusercontent.com/nature-sky/Agar.io-bot/master/bot.user.js?' + Math.floor((Math.random() * 1000000) + 1), function(data) {
                 var latestVersion = data.replace(/(\r\n|\n|\r)/gm,"");
                 latestVersion = latestVersion.substring(latestVersion.indexOf("// @version")+11,latestVersion.indexOf("// @grant"));
 
@@ -87,7 +87,7 @@ var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 
                 if(latestVersion > myVersion)
                 {
-                    update("aposBot", "bot.user.js", "https://github.com/Apostolique/Agar.io-bot/blob/" + sha + "/bot.user.js/");
+                    update("aposBot", "bot.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/" + sha + "/bot.user.js/");
                 }
                 window.log('Current bot.user.js Version: ' + myVersion + " on Github: " + latestVersion);
             });
