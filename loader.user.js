@@ -2,7 +2,9 @@
 // @name        AposLoader
 // @namespace   AposLoader
 // @description Grabs latest versions of the bot scripts automatically.
-// @include     http://agar.io/, http://agario.fun/?ip=140.112.31.200:443, https://cdn.jsdelivr.net/*
+// @include     http://agar.io/ 
+// @include     http://agario.fun/?ip=140.112.31.200:443
+// @include     https://cdn.jsdelivr.net/*
 // @version     1.3
 // @grant       none
 // @author      http://www.twitch.tv/apostolique
