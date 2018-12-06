@@ -88,7 +88,7 @@ var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 
                 if(latestVersion > myVersion)
                 {
-                    update("aposBot", "bot.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/bot.user.js/");
+                    update("aposBot", "bot.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/" + sha + "/bot.user.js/");
                 }
                 window.log('Current bot.user.js Version: ' + myVersion + " on Github: " + latestVersion);
             });
