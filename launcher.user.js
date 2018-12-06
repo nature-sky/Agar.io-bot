@@ -243,7 +243,8 @@ getLatestCommit();
                 b = a.val();
             b && (xa[b] = a.text())
         }));
-        e.get(ya + "info", function(a) {
+        //e.get(ya + "info", function(a) {
+        e.get(ya, function(a)
             var b = {},
                 d;
             for (d in a.regions) {
@@ -3146,7 +3147,7 @@ getLatestCommit();
                         c.gapi.interactivepost.render(b, {
                             contenturl: EnvConfig.game_url,
                             clientid: EnvConfig.gplus_client_id,
-                            cookiepolicy: "http://agario.fun",
+                            cookiepolicy: "http://agario.fun/cookies-policy",
                             prefilltext: a,
                             calltoactionlabel: "BEAT",
                             calltoactionurl: EnvConfig.game_url
