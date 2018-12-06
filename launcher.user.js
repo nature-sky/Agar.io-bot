@@ -1622,7 +1622,8 @@ getLatestCommit();
                     e("#darkTheme").prop("checked", w.blackTheme);
                     Ob();
                     setInterval(Ob, 18E4);
-                    O = Ab = document.getElementById("canvas");
+                    O = document.getElementById("canvas");
+                    Ab = document.getElementById("canvas");
                     null != O && (f = O.getContext("2d"), O.onmousedown = function(a) {
                         if (gc) {
                             var b = a.clientX - (5 + q / 5 / 2),
