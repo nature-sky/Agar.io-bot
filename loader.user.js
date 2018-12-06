@@ -5,11 +5,11 @@
 // @include     http://agar.io/ 
 // @include     http://agario.fun/?ip=140.112.31.200:443
 // @include     https://cdn.jsdelivr.net/*
-// @version     1.3
+// @version     1.4
 // @grant       none
 // @author      http://www.twitch.tv/apostolique
 // ==/UserScript==
-var aposLoaderVersion = 1.3;
+var aposLoaderVersion = 1.4;
 var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 
 function getLatestCommit() {

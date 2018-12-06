@@ -24,12 +24,12 @@ SOFTWARE.*/
 // @name        AposBot
 // @namespace   AposBot
 // @include     http://agar.io/*, http://agario.fun/*
-// @version     3.651
+// @version     3.652
 // @grant       none
 // @author      http://www.twitch.tv/apostolique
 // ==/UserScript==
 
-var aposBotVersion = 3.651;
+var aposBotVersion = 3.652;
 
 //TODO: Team mode
 //      Detect when people are merging
