@@ -56,7 +56,7 @@ window.log = function(message){
     }
 }
 
-var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
+var sha = "f25f757d6c6b6e967ed9a2d6f831fb98cafd88a7";
 (function () {
     window.jQuery.ajax({
             url: "https://api.github.com/repos/nature-sky/Agar.io-bot/git/refs/heads/master",

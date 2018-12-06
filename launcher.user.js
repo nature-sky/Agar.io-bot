@@ -40,7 +40,7 @@ window.log = function(message){
 Array.prototype.peek = function() {
     return this[this.length - 1];
 };
-var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
+var sha = "f25f757d6c6b6e967ed9a2d6f831fb98cafd88a7";
 
 function getLatestCommit() {
     window.jQuery.ajax({

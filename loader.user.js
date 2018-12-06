@@ -10,7 +10,7 @@
 // @author      http://www.twitch.tv/apostolique
 // ==/UserScript==
 var aposLoaderVersion = 1.4;
-var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
+var sha = "f25f757d6c6b6e967ed9a2d6f831fb98cafd88a7";
 
 function getLatestCommit() {
 	window.jQuery.ajax({
@@ -55,7 +55,7 @@ function getLatestCommit() {
 			latestVersion = parseFloat(latestVersion + 0.0000);
 			var myVersion = parseFloat(aposLoaderVersion + 0.0000);
 			if (latestVersion > myVersion) {
-				update("aposLoader", "loader.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/master/loader.user.js/");
+				update("aposLoader", "loader.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/" + sha + "loader.user.js/");
 			}
 			console.log('Current loader.user.js Version: ' + myVersion + " on Github: " + latestVersion);
 		});
