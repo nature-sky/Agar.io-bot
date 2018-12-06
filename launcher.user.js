@@ -243,8 +243,7 @@ getLatestCommit();
                 b = a.val();
             b && (xa[b] = a.text())
         }));
-        //e.get(ya + "info", function(a) {
-        e.get(ya, function(a)
+        e.get(ya + "info", function(a) {
             var b = {},
                 d;
             for (d in a.regions) {
