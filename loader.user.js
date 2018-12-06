@@ -10,6 +10,7 @@
 // @author      http://www.twitch.tv/apostolique
 // ==/UserScript==
 var aposLoaderVersion = 1.4;
+var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 
 function getLatestCommit() {
 	window.jQuery.ajax({
