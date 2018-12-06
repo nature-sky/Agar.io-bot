@@ -10,7 +10,6 @@
 // @author      http://www.twitch.tv/apostolique
 // ==/UserScript==
 var aposLoaderVersion = 1.4;
-var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 
 function getLatestCommit() {
 	window.jQuery.ajax({
@@ -25,7 +24,7 @@ function getLatestCommit() {
 			var latestVersion = data.replace(/(\r\n|\n|\r)/gm, "");
 			latestVersion = latestVersion.substring(latestVersion.indexOf("// @version") + 11, latestVersion.indexOf("// @grant"));
 			latestVersion = parseFloat(latestVersion + 0.0000);
-			var script1 = "https://cdn.jsdelivr.net/gh/nature-sky/Agar.io-bot/" + sha + "/launcher.user.js";
+			var script1 = "https://cdn.jsdelivr.net/gh/nature-sky/Agar.io-bot/launcher.user.js";
 			console.log("Script: " + script1);
 			window.jQuery("body").append('<script type="text/javascript" src="' + script1 + '"></script>');
 		});
@@ -33,7 +32,7 @@ function getLatestCommit() {
 			var latestVersion = data.replace(/(\r\n|\n|\r)/gm, "");
 			latestVersion = latestVersion.substring(latestVersion.indexOf("// @version") + 11, latestVersion.indexOf("// @grant"));
 			latestVersion = parseFloat(latestVersion + 0.0000);
-			var script2 = "https://cdn.jsdelivr.net/gh/nature-sky/Agar.io-bot/" + sha + "/bot.user.js";
+			var script2 = "https://cdn.jsdelivr.net/gh/nature-sky/Agar.io-bot/bot.user.js";
 			console.log("Script: " + script2);
 			window.jQuery("body").append('<script type="text/javascript" src="' + script2 + '"></script>');
 		});
