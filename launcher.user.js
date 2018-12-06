@@ -20,11 +20,11 @@ SOFTWARE.*/
 // @namespace   AposLauncher
 // @include     http://agar.io/*
 // @include     http://agario.fun/*
-// @version     5.043
+// @version     5.044
 // @grant       none
 // @author      http://www.twitch.tv/apostolique
 // ==/UserScript==
-var aposLauncherVersion = 5.043;
+var aposLauncherVersion = 5.044;
 
 Number.prototype.mod = function(n) {
     return ((this % n) + n) % n;
@@ -40,7 +40,7 @@ window.log = function(message){
 Array.prototype.peek = function() {
     return this[this.length - 1];
 };
-var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
+
 
 function getLatestCommit() {
     window.jQuery.ajax({
@@ -72,7 +72,7 @@ function getLatestCommit() {
             var myVersion = parseFloat(aposLauncherVersion + 0.0000);
 
             if (latestVersion > myVersion) {
-                update("aposLauncher", "launcher.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/" + sha + "/launcher.user.js/");
+                update("aposLauncher", "launcher.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/launcher.user.js/");
             }
             window.log('Current launcher.user.js Version: ' + myVersion + " on Github: " + latestVersion);
         });

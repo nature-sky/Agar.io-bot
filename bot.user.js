@@ -55,7 +55,7 @@ window.log = function(message){
     }
 }
 
-var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
+
 (function () {
     window.jQuery.ajax({
             url: "https://api.github.com/repos/nature-sky/Agar.io-bot/git/refs/heads/master",
@@ -87,7 +87,7 @@ var sha = "efde0488cc2cc176db48dd23b28a20b90314352b";
 
                 if(latestVersion > myVersion)
                 {
-                    update("aposBot", "bot.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/" + sha + "/bot.user.js/");
+                    update("aposBot", "bot.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/bot.user.js/");
                 }
                 window.log('Current bot.user.js Version: ' + myVersion + " on Github: " + latestVersion);
             });
