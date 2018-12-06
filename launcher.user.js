@@ -3145,7 +3145,7 @@ getLatestCommit();
                         c.gapi.interactivepost.render(b, {
                             contenturl: EnvConfig.game_url,
                             clientid: EnvConfig.gplus_client_id,
-                            cookiepolicy: "http://agar.io",
+                            cookiepolicy: "http://agario.fun",
                             prefilltext: a,
                             calltoactionlabel: "BEAT",
                             calltoactionurl: EnvConfig.game_url
@@ -3198,5 +3198,5 @@ window.refreshTwitch = function() {
     }).fail(function() {});
 }
 setInterval(window.refreshTwitch, 60000);
-window.refreshTwitch();
+//window.refreshTwitch();
 
