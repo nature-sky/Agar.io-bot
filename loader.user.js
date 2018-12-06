@@ -55,7 +55,7 @@ function getLatestCommit() {
 			latestVersion = parseFloat(latestVersion + 0.0000);
 			var myVersion = parseFloat(aposLoaderVersion + 0.0000);
 			if (latestVersion > myVersion) {
-				update("aposLoader", "loader.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/" + sha + "loader.user.js/");
+				update("aposLoader", "loader.user.js", "https://github.com/nature-sky/Agar.io-bot/blob/master/loader.user.js/");
 			}
 			console.log('Current loader.user.js Version: ' + myVersion + " on Github: " + latestVersion);
 		});
