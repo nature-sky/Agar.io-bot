@@ -260,7 +260,7 @@ getLatestCommit();
         e("#overlays").hide();
         e("#stats").hide();
         e("#mainPanel").hide();
-        //aa = ja = !1;
+        aa = ja = !1;
         Qb();
         //c.destroyAd(c.adSlots.aa);
         //c.destroyAd(c.adSlots.ac)
@@ -271,7 +271,7 @@ getLatestCommit();
     }
 
     function ua(a) {
-        ja || aa || (Aa ? e(".btn-spectate").prop("disabled", !0) : e(".btn-spectate").prop("disabled", !1), Ba = !1, N = null, bb || (e("#adsBottom").show(), e("#g300x250").hide(), e("#a300x250").show(), e("#g728x90").hide(), e("#a728x90").show()), c.refreshAd(bb ? c.adSlots.ac : c.adSlots.aa), bb = !1, 1E3 > a && (C = 1), ja = !0, e("#mainPanel").show(), 0 < a ? e("#overlays").fadeIn(a) : e("#overlays").show())
+        ja || aa || (Aa ? e(".btn-spectate").prop("disabled", !0) : e(".btn-spectate").prop("disabled", !1), Ba = !1, N = null, bb || (e("#adsBottom").show(), e("#g300x250").hide(), e("#a300x250").show(), e("#g728x90").hide(), e("#a728x90").show()), bb = !1, 1E3 > a && (C = 1), ja = !0, e("#mainPanel").show(), 0 < a ? e("#overlays").fadeIn(a) : e("#overlays").show())
     }
 
     function ka(a) {
