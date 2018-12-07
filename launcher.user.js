@@ -151,7 +151,7 @@ getLatestCommit();
         setInterval(Ob, 18E4);
 
         var father = window.jQuery("#canvas").parent();
-        window.jQuery("#canvas").remove();
+        //window.jQuery("#canvas").remove();
         father.prepend("<canvas id='canvas'>");
         $b();
 
