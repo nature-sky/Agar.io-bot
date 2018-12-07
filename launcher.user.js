@@ -260,10 +260,10 @@ getLatestCommit();
         e("#overlays").hide();
         e("#stats").hide();
         e("#mainPanel").hide();
-        //aa = ja = !1;
+        aa = ja = !1;
         Qb();
-        //c.destroyAd(c.adSlots.aa);
-        //c.destroyAd(c.adSlots.ac)
+        c.destroyAd(c.adSlots.aa);
+        c.destroyAd(c.adSlots.ac)
     }
 
     function za(a) {
