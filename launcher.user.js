@@ -243,7 +243,7 @@ getLatestCommit();
                 b = a.val();
             b && (xa[b] = a.text())
         }));
-        e.get(ya + "info", function(a) {
+        e.get(ya + "info.php", function(a) {
             var b = {},
                 d;
             for (d in a.regions) {
