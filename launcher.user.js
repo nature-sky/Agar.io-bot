@@ -745,10 +745,8 @@ getLatestCommit();
     function $b() {
         q = 1 * c.innerWidth;
         u = 1 * c.innerHeight;
-        Ab.width = q;
-        O.width = q;
-        Ab.height = u;
-        O.height = u;
+        Ab.width = O.width = q;
+        Ab.height = O.height = u;
         var a = e("#helloContainer");
         a.css("transform", "none");
         var b = a.height(),
