@@ -152,10 +152,10 @@ getLatestCommit();
 
         var father = window.jQuery("#canvas").parent();
         window.jQuery("#canvas").remove();
-        father.prepend("<canvas id='canvas1'>");
+        father.prepend("<canvas id='canvas'>");
         $b();
 
-        O = Ab = document.getElementById("canvas1");
+        O = Ab = document.getElementById("canvas");
         f = O.getContext("2d");
         //UPDATE
         O.onmousedown = function(a) {
