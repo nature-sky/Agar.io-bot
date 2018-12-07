@@ -150,13 +150,13 @@ getLatestCommit();
         Ob();
         setInterval(Ob, 18E4);
 
-        var father = window.jQuery("#canvas").parent();
+        //var father = window.jQuery("#canvas").parent();
         //window.jQuery("#canvas").remove();
-        father.prepend("<canvas id='canvas'>");
-        $b();
-
+        //father.prepend("<canvas id='canvas'>");
         O = Ab = document.getElementById("canvas");
         f = O.getContext("2d");
+        $b();
+
         //UPDATE
         O.onmousedown = function(a) {
             if (gc) {
