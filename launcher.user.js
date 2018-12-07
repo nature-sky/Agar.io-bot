@@ -1475,7 +1475,6 @@ getLatestCommit();
                 E[d[0]] = d[1]
             }
         })();
-        console.log(c);
         c.queryString = E;
         var qc = "fb" in E,
             Yc = "miniclip" in E,
@@ -1501,7 +1500,7 @@ getLatestCommit();
                 gb = "https:" == db;
             E.master && (EnvConfig.master_url = E.master);
             var ya = db + "//" +
-                \x2f\x2f\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f + "/",
+                "\x2f\x2f\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + "/",
                 Ua = c.navigator.userAgent;
             if (-1 != Ua.indexOf("Android")) c.ga && c.ga("send", "event", "MobileRedirect", "PlayStore"), setTimeout(function() {
                 c.location.href = "https://play.google.com/store/apps/details?id=com.miniclip.agar.io"
