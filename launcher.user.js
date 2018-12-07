@@ -262,7 +262,7 @@ getLatestCommit();
         e("#mainPanel").hide();
         aa = ja = !1;
         Qb();
-        c.destroyAd(c.adSlots.aa);
+        //c.destroyAd(c.adSlots.aa);
         c.destroyAd(c.adSlots.ac)
     }
 
