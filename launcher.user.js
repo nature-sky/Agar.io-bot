@@ -184,14 +184,14 @@ getLatestCommit();
         /firefox/i.test(navigator.userAgent) ? document.addEventListener("DOMMouseScroll", Nb, !1) : document.body.onmousewheel = Nb
         c.onkeydown = function(a) {
             //UPDATE
-            //if (!window.jQuery('#nick').is(":focus")) {
+            if (!window.jQuery('#nick').is(":focus")) {
                 32 != a.keyCode || ra || ("nick" != a.target.id && a.preventDefault(), Za(), ra = !0);
                 81 == a.keyCode && (X(18), sa = !0);
                 87 != a.keyCode || ta || (Mb(), ta = !0);
-                27 == a.keyCode && (a.preventDefault(), ua(300), e("#oferwallContainer").is(":visible") && c.closeOfferwall(), e("#videoContainer").is(":visible") && c.closeVideoContainer())
+                27 == a.keyCode && (a.preventDefault(), ua(300)
                     //UPDATE
                 keyAction(a);
-            //}
+            }
         };
         c.onkeyup = function(a) {
             32 == a.keyCode && (ra = !1);
@@ -1352,7 +1352,7 @@ getLatestCommit();
             },
             success: function(b) {
                 b = b.split("\n");
-                e(".partyToken").val("agar.io/#" + c.encodeURIComponent(a));
+                e(".partyToken").val("\x2f\x2f\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + c.encodeURIComponent(a));
                 e("#helloContainer").attr("data-party-state", "5");
                 ka(":party");
                 fb("ws://" + b[0], a)
@@ -3075,7 +3075,7 @@ getLatestCommit();
                     ka(":party");
                     S = function(a) {
                         Fb("/#" + c.encodeURIComponent(a));
-                        e(".partyToken").val("agar.io/#" + c.encodeURIComponent(a));
+                        e(".partyToken").val("\x2f\x2f\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + c.encodeURIComponent(a));
                         e("#helloContainer").attr("data-party-state", "1")
                     };
                     Q()
