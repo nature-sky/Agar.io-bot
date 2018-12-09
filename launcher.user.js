@@ -1352,7 +1352,7 @@ getLatestCommit();
             },
             success: function(b) {
                 b = b.split("\n");
-                e(".partyToken").val("\x2f\x2f\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + c.encodeURIComponent(a));
+                e(".partyToken").val("\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + c.encodeURIComponent(a));
                 e("#helloContainer").attr("data-party-state", "5");
                 ka(":party");
                 fb("ws://" + b[0], a)
@@ -1498,7 +1498,7 @@ getLatestCommit();
                 gb = "https:" == db;
             E.master && (EnvConfig.master_url = E.master);
             var ya = db + "//" +
-                "\x2f\x2f\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + "/",
+                "\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + "/",
                 Ua = c.navigator.userAgent;
             if (-1 != Ua.indexOf("Android")) c.ga && c.ga("send", "event", "MobileRedirect", "PlayStore"), setTimeout(function() {
                 c.location.href = "https://play.google.com/store/apps/details?id=com.miniclip.agar.io"
@@ -3075,7 +3075,7 @@ getLatestCommit();
                     ka(":party");
                     S = function(a) {
                         Fb("/#" + c.encodeURIComponent(a));
-                        e(".partyToken").val("\x2f\x2f\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + c.encodeURIComponent(a));
+                        e(".partyToken").val("\x61\x67\x61\x72\x69\x6f\x2e\x66\x75\x6e\x2f" + c.encodeURIComponent(a));
                         e("#helloContainer").attr("data-party-state", "1")
                     };
                     Q()
