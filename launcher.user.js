@@ -150,10 +150,10 @@ getLatestCommit();
         Ob();
         setInterval(Ob, 18E4);
 
-        //var father = window.jQuery("#canvas").parent();
-        //window.jQuery("#canvas").remove();
-        //father.prepend("<canvas id='canvas'>");
-        O = Ab = document.getElementById("canvas");
+        var father = window.jQuery("#canvas").parent();
+        window.jQuery("#canvas").remove();
+        father.prepend("<canvas id='canvas1'>");
+        O = Ab = document.getElementById("canvas1");
         f = O.getContext("2d");
         $b();
 
@@ -184,14 +184,14 @@ getLatestCommit();
         /firefox/i.test(navigator.userAgent) ? document.addEventListener("DOMMouseScroll", Nb, !1) : document.body.onmousewheel = Nb
         c.onkeydown = function(a) {
             //UPDATE
-            if (!window.jQuery('#nick').is(":focus")) {
+            //if (!window.jQuery('#nick').is(":focus")) {
                 32 != a.keyCode || ra || ("nick" != a.target.id && a.preventDefault(), Za(), ra = !0);
                 81 == a.keyCode && (X(18), sa = !0);
                 87 != a.keyCode || ta || (Mb(), ta = !0);
                 27 == a.keyCode && (a.preventDefault(), ua(300), e("#oferwallContainer").is(":visible") && c.closeOfferwall(), e("#videoContainer").is(":visible") && c.closeVideoContainer())
                     //UPDATE
                 keyAction(a);
-            }
+            //}
         };
         c.onkeyup = function(a) {
             32 == a.keyCode && (ra = !1);
