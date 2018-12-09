@@ -188,7 +188,7 @@ getLatestCommit();
                 32 != a.keyCode || ra || ("nick" != a.target.id && a.preventDefault(), Za(), ra = !0);
                 81 == a.keyCode && (X(18), sa = !0);
                 87 != a.keyCode || ta || (Mb(), ta = !0);
-                27 == a.keyCode && (a.preventDefault(), ua(300)
+                27 == a.keyCode && (a.preventDefault(), ua(300))
                     //UPDATE
                 keyAction(a);
             //}
