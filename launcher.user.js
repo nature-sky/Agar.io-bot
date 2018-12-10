@@ -975,7 +975,7 @@ var keyim = $(".mykey").val();
                 d.strokeStyle = '#003300';
                 d.stroke();
             } else {
-                var text = new Na(18, (getDarkBool() ? '#F2FBFF' : '#111111'), true, (getDarkBool() ? '#111111' : '#F2FBFF'));
+                var text = new Da(18, (getDarkBool() ? '#F2FBFF' : '#111111'), true, (getDarkBool() ? '#111111' : '#F2FBFF'));
 
                 text.B(dText[i]);
                 var textRender = text.N();
