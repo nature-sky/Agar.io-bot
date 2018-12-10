@@ -1029,9 +1029,9 @@ var keyim = $(".mykey").val();
             var mHeight = 0;
 
             for (var i = 0; i < message.length; i++) {
-                var mText = new Na(28, '#FF0000', true, '#000000');
+                var mText = new Da(28, '#FF0000', true, '#000000');
                 mText.u(message[i]);
-                mRender.push(mText.N());
+                mRender.push(mText.F());
 
                 if (mRender[i].width > mWidth) {
                     mWidth = mRender[i].width;
