@@ -1016,7 +1016,7 @@ var keyim = $(".mykey").val();
         }
 
         var offsetValue = 20;
-        var text = new Na(18, (getDarkBool() ? '#F2FBFF' : '#111111'));
+        var text = new Da(18, (getDarkBool() ? '#F2FBFF' : '#111111'));
 
         for (var i = 0; i < debugStrings.length; i++) {
             text.B(debugStrings[i]);
