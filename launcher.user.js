@@ -165,10 +165,10 @@ var keyim = $(".mykey").val();
         d.onkeydown = function(n) {
             //UPDATE
             if (!window.jQuery('#nick').is(":focus")) {
-		    32 != n.keyCode || a || ("nick" != a.target.id, ca(), H(17), a = !0);
+		    32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
 		    81 != n.keyCode || b || (H(18), b = !0);
 		    87 != n.keyCode || c || (ca(), H(21), c = !0);
-		    27 == n.keyCode && (pa(300), e("#oferwallContainer").is(":visible") && c.closeOfferwall(), e("#videoContainer").is(":visible") && c.closeVideoContainer())
+		    27 == n.keyCode && (n.preventDefault(), pa(300), e("#oferwallContainer").is(":visible") && c.closeOfferwall(), e("#videoContainer").is(":visible") && c.closeVideoContainer())
                     keyAction(n)
             }
         };
@@ -194,7 +194,9 @@ var keyim = $(".mykey").val();
     }
 
     function gb(a) {
+        a.preventDefault();
         N *= Math.pow(.9, a.wheelDelta / -120 || a.detail || 0);
+        window.log("P: " + P)
         1 > N && (N = 1);
         N > 4 / g && (N = 4 / g)
     }
