@@ -645,7 +645,7 @@ var keyim = $(".mykey").val();
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
             window.log("Dead: " + ~~(getCurrentScore() / 100));
-            apos('send', 'pageview');
+            //apos('send', 'pageview');
         }
 
         if (getPlayer().length == 0 && !firstStart) {
