@@ -828,7 +828,7 @@ var keyim = $(".mykey").val();
         }
 
         bestTime = Math.max(nbSeconds, bestTime);
-        var displayText = 'Score: ' + ~~(T / 100) + " Current Time: " + nbSeconds + " seconds.";
+        var displayText = 'Score: ' + ~~(P / 100) + " Current Time: " + nbSeconds + " seconds.";
 
 
         0 != P && (null == Ca && (Ca = new Da(12, "#FFFFFF")), Ca.u(ha("score") + ": " + ~~(P / 100)), c = Ca.F(), a = c.width, f.globalAlpha = .3, f.fillStyle = "#000000", f.fillRect(4, q - 5 - 12 - 5, a + 5, 17), f.globalAlpha = 1, f.drawImage(c, 6, q - 5 - 12 - 3));
@@ -977,8 +977,8 @@ var keyim = $(".mykey").val();
             } else {
                 var text = new Da(18, (getDarkBool() ? '#F2FBFF' : '#111111'), true, (getDarkBool() ? '#111111' : '#F2FBFF'));
 
-                text.B(dText[i]);
-                var textRender = text.N();
+                text.u(dText[i]);
+                var textRender = text.F();
                 d.drawImage(textRender, dPoints[i][0] - (textRender.width / 2), dPoints[i][1] - (textRender.height / 2));
             }
 
@@ -1019,8 +1019,8 @@ var keyim = $(".mykey").val();
         var text = new Da(18, (getDarkBool() ? '#F2FBFF' : '#111111'));
 
         for (var i = 0; i < debugStrings.length; i++) {
-            text.B(debugStrings[i]);
-            var textRender = text.N();
+            text.u(debugStrings[i]);
+            var textRender = text.F();
             d.drawImage(textRender, 20, offsetValue);
             offsetValue += textRender.height;
         }
@@ -1032,7 +1032,7 @@ var keyim = $(".mykey").val();
 
             for (var i = 0; i < message.length; i++) {
                 var mText = new Na(28, '#FF0000', true, '#000000');
-                mText.B(message[i]);
+                mText.u(message[i]);
                 mRender.push(mText.N());
 
                 if (mRender[i].width > mWidth) {
