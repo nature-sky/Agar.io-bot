@@ -135,13 +135,7 @@ var keyim = $(".mykey").val();
         eb();
         setInterval(eb, 18E4);
 
-        //UPDATE
-        var father = window.jQuery("#canvas").parent();
-        window.jQuery("#canvas").remove();
-        father.prepend("<canvas id='canvas1'>");
-        hb();
-
-        L = Ha = document.getElementById("canvas1");
+        L = Ha = document.getElementById("canvas");
         f = L.getContext("2d");
         L.onmousedown = function(a) {
             if (fb) {
