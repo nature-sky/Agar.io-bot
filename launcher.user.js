@@ -729,7 +729,7 @@ var keyim = $(".mykey").val();
             g = (9 * g + a) / 10
 
             //UPDATE
-            var a2 = Math.pow(Math.min(64 / a2, 1), .4) * Bb2();
+            var a2 = Math.pow(Math.min(64 / a, 1), .4) * Bb2();
             g2 = (9 * g2 + a2) / 10
         }
     }
@@ -756,7 +756,7 @@ var keyim = $(".mykey").val();
             u = (u + c) / 2
 
           //UPDATE
-        } else t = (29 * t + ja) / 30, u = (29 * u + ka) / 30, g = (9 * g + la * Bb()) / 10, g2 = (9 * g2 + a2) / 10;
+        } else t = (29 * t + ja) / 30, u = (29 * u + ka) / 30, g = (9 * g + la * Bb()) / 10, g2 = (9 * g + la * Bb2());
         Nb();
         Ia();
         Ya || f.clearRect(0, 0, h, q);
