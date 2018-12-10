@@ -730,7 +730,7 @@ var keyim = $(".mykey").val();
 
             //UPDATE
             var a2 = Math.pow(Math.min(64 / a2, 1), .4) * Bb2();
-            var g2 = (9 * g2 + a2) / 10
+            g2 = (9 * g2 + a2) / 10
         }
     }
 
@@ -1415,6 +1415,7 @@ var keyim = $(".mykey").val();
                 za = 1E4,
                 Aa = 1E4,
                 g = 1,
+                g2 = 1,
                 y = null,
                 Hb = !0,
                 Ea = !0,
@@ -2119,6 +2120,21 @@ var keyim = $(".mykey").val();
                     j: !1,
                     L: !0,
                     S: 0,
+
+                    //UPDATE
+                    updateCode: 0,
+                    danger: false,
+                    dangerTimeOut: 0,
+                    isNotMoving: function() {
+                        return (this.x == this.s && this.y == this.u);
+                    },
+                    isVirus: function() {
+                        return this.c;
+                    },
+                    getUptimeTime: function() {
+                        return this.T;
+                    },
+
                     V: null,
                     R: function() {
                         var a;
