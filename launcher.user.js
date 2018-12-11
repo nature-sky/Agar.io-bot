@@ -642,7 +642,7 @@ var keyim = $(".mykey").val();
         //UPDATE
         if (firstStart) {
             //Uc(false);
-            fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
+            ub = Date.now(), Ua = !1, fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
                 e("#overlays").fadeIn(500, function() {
                     Y()
                 });
