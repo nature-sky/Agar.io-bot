@@ -644,7 +644,7 @@ var keyim = $(".mykey").val();
             //Uc(false);
             fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
                 e("#overlays").fadeIn(500), function() {
-                    Y();
+                    Y()
                 });
                 e("#stats").show();
             }, 1500)) : pa(500));
