@@ -642,7 +642,7 @@ var keyim = $(".mykey").val();
         //UPDATE
         if (firstStart) {
             //Uc(false);
-            ub = Date.now(), Ua = !1, fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#stats").show() : pa(500))
+            ub = Date.now(), Ua = !1, fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#stats").show() : pa(500)))
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
