@@ -642,7 +642,12 @@ var keyim = $(".mykey").val();
         //UPDATE
         if (firstStart) {
             //Uc(false);
-            fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), e("#stats").show()) : pa(3E3));
+            fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
+                e("#overlays").fadeIn(500), function() {
+                    Y();
+                });
+                e("#stats").show();
+            }, 1500)) : pa(500))
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
