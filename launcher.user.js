@@ -643,8 +643,8 @@ var keyim = $(".mykey").val();
         if (firstStart) {
             //Uc(false);
             fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
-                e("#overlays").fadeIn(500), function() {
-                    Y();
+                e("#overlays").fadeIn(500, function() {
+                    Y()
                 });
                 e("#stats").show();
             }, 1500)) : pa(500));
