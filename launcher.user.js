@@ -647,7 +647,7 @@ var keyim = $(".mykey").val();
                     Y()
                 });
                 e("#stats").show();
-            }, 1500)) : pa(500));
+            }, 1500)) : pa(500))
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
