@@ -164,12 +164,12 @@ var keyim = $(".mykey").val();
             c = !1;
         d.onkeydown = function(n) {
             //UPDATE
-            if (!window.jQuery('#nick').is(":focus")) {
-		    32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
-		    81 != n.keyCode || b || (H(18), b = !0);
-		    87 != n.keyCode || c || (ca(), H(21), c = !0);
-		    27 == n.keyCode && (n.preventDefault(), pa(300))
-                    keyAction(n)
+	    if (!window.jQuery('#nick').is(":focus")) {
+	        32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
+	        81 != n.keyCode || b || (H(18), b = !0);
+	        87 != n.keyCode || c || (ca(), H(21), c = !0);
+	        27 == n.keyCode && (n.preventDefault(), pa(300))
+		keyAction(n)
             }
         };
         d.onkeyup = function(n) {
@@ -642,7 +642,7 @@ var keyim = $(".mykey").val();
         //UPDATE
         if (firstStart) {
             //Uc(false);
-            (fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(500), e("#stats").show()) : pa(500)))
+            (fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), e("#stats").show()) : pa(3E3)))
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
