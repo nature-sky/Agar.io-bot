@@ -1202,7 +1202,7 @@ var keyim = $(".mykey").val();
                     };
                 d.requestAnimationFrame(g)
             }
-        } //else e(".agario-profile-panel .progress-bar-star").text(a.d), e(".agario-exp-bar .progress-bar-text").text(a.e + "/" + a.c + " XP"), e(".agario-exp-bar .progress-bar").css("width", (88 * a.e / a.c).toFixed(2) + "%"), b && b()
+        } else e(".agario-profile-panel .progress-bar-star").text(a.d), e(".agario-exp-bar .progress-bar-text").text(a.e + "/" + a.c + " XP"), e(".agario-exp-bar .progress-bar").css("width", (88 * a.e / a.c).toFixed(2) + "%"), b && b()
     }
 
     function Fb(a) {
@@ -1363,7 +1363,7 @@ var keyim = $(".mykey").val();
     function Uc() {
 		fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
 			e("#overlays").fadeIn(500, function() {
-				Y()
+				//Y()
 			});
 			e("#stats").show()
 		}, 1500)) : pa(500))
