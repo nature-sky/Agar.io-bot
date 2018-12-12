@@ -640,7 +640,7 @@ var keyim = $(".mykey").val();
 
     function ca() {
         //UPDATE
-        if (firstStart) {
+        if (!firstStart) {
             Uc(false);
         }
 
@@ -649,7 +649,7 @@ var keyim = $(".mykey").val();
             apos('send', 'pageview');
         }
 
-        if (getPlayer().length == 0 && firstStart) {
+        if (getPlayer().length == 0 && !firstStart) {
             window.log("Revive");
             setNick(originalName);
             reviving = true;
@@ -1393,7 +1393,7 @@ var keyim = $(".mykey").val();
                 dText = [],
                 lines = [],
                 names = ["AIRobot"],
-                firstStart = false;
+                firstStart = true;
                 originalName = names[Math.floor(Math.random() * names.length)],
                 sessionScore = 0,
                 serverIP = "",
@@ -1477,7 +1477,7 @@ var keyim = $(".mykey").val();
                 var ta = null;
                 d.setNick = function(a) {
                     //UPDATE
-                    firstStart = true;
+                    firstStart = false;
                     originalName = a;
                     if (getPlayer().length == 0) {
                         lifeTimer = new Date();
