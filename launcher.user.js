@@ -641,7 +641,7 @@ var keyim = $(".mykey").val();
     function ca() {
         //UPDATE
         if (firstStart) {
-            //Uc(false)
+            //Uc(false);
             fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
                 e("#overlays").fadeIn(500, function() {
                     Y()
@@ -1388,7 +1388,7 @@ var keyim = $(".mykey").val();
                 dArc = [],
                 dText = [],
                 lines = [],
-                names = ["NotReallyABot"],
+                names = ["AIRobot"],
                 firstStart = true;
                 originalName = names[Math.floor(Math.random() * names.length)],
                 sessionScore = 0,
