@@ -163,14 +163,14 @@ var keyim = $(".mykey").val();
             b = !1,
             c = !1;
         d.onkeydown = function(n) {
-            //UPDATE
-	    if (!window.jQuery('#nick').is(":focus")) {
-	        32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
-	        81 != n.keyCode || b || (H(18), b = !0);
-	        87 != n.keyCode || c || (ca(), H(21), c = !0);
-	        27 == n.keyCode && (n.preventDefault(), pa(300))
-		keyAction(n)
-            }
+			//UPDATE
+			if (!window.jQuery('#nick').is(":focus")) {
+			    32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
+			    81 != n.keyCode || b || (H(18), b = !0);
+			    87 != n.keyCode || c || (ca(), H(21), c = !0);
+			    27 == n.keyCode && (n.preventDefault(), pa(300))
+				keyAction(n)
+			}
         };
         d.onkeyup = function(n) {
             32 == n.keyCode && (a = !1);
@@ -640,7 +640,7 @@ var keyim = $(".mykey").val();
 
     function ca() {
         //UPDATE
-        if (firstStart) {
+        if (!firstStart) {
             Uc(false);
         }
 
@@ -1361,12 +1361,12 @@ var keyim = $(".mykey").val();
     }
 
     function Uc() {
-        fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
-            e("#overlays").fadeIn(500, function() {
-	        Y()
-	    });
-	    e("#stats").show()
-	}, 1500)) : pa(500))
+		fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
+			e("#overlays").fadeIn(500, function() {
+				Y()
+			});
+			e("#stats").show()
+		}, 1500)) : pa(500))
     }
 
     if (!d.agarioNoInit) {
