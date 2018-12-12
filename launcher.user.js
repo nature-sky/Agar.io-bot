@@ -641,13 +641,7 @@ var keyim = $(".mykey").val();
     function ca() {
         //UPDATE
         if (firstStart) {
-            //Uc(false);
-            fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
-                e("#overlays").fadeIn(500, function() {
-                    Y()
-                });
-                e("#stats").show()
-            }, 1500)) : pa(500))
+            Uc(false);
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
@@ -1365,6 +1359,16 @@ var keyim = $(".mykey").val();
             }
         }
     }
+
+    function Uc() {
+        fa || V || (vb ? (nb(d.ab), Yb(), V = !0, setTimeout(function() {
+            e("#overlays").fadeIn(500, function() {
+	        Y()
+	    });
+	    e("#stats").show()
+	}, 1500)) : pa(500))
+    }
+
     if (!d.agarioNoInit) {
         var cb = d.location.protocol,
             Qb = "https:" == cb,
