@@ -640,7 +640,7 @@ var keyim = $(".mykey").val();
 
     function ca() {
         //UPDATE
-        if (!firstStart) {
+        if (firstStart) {
             Uc(false);
         }
 
