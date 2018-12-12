@@ -641,11 +641,12 @@ var keyim = $(".mykey").val();
     function ca() {
         //UPDATE
         if (firstStart) {
-            Uc(false);
+            
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
             window.log("Dead: " + ~~(getCurrentScore() / 100));
+            Uc(false);
             apos('send', 'pageview');
         }
 
@@ -1202,7 +1203,7 @@ var keyim = $(".mykey").val();
                     };
                 d.requestAnimationFrame(g)
             }
-        } //else e(".agario-profile-panel .progress-bar-star").text(a.d), e(".agario-exp-bar .progress-bar-text").text(a.e + "/" + a.c + " XP"), e(".agario-exp-bar .progress-bar").css("width", (88 * a.e / a.c).toFixed(2) + "%"), b && b()
+        } else e(".agario-profile-panel .progress-bar-star").text(a.d), e(".agario-exp-bar .progress-bar-text").text(a.e + "/" + a.c + " XP"), e(".agario-exp-bar .progress-bar").css("width", (88 * a.e / a.c).toFixed(2) + "%"), b && b()
     }
 
     function Fb(a) {
