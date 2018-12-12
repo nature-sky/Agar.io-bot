@@ -164,12 +164,12 @@ var keyim = $(".mykey").val();
             c = !1;
         d.onkeydown = function(n) {
             //UPDATE
-            if (!window.jQuery('#nick').is(":focus")) {
+	    if (!window.jQuery('#nick').is(":focus")) {
 	        32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
 	        81 != n.keyCode || b || (H(18), b = !0);
 	        87 != n.keyCode || c || (ca(), H(21), c = !0);
 	        27 == n.keyCode && (n.preventDefault(), pa(300))
-                keyAction(n)
+		keyAction(n)
             }
         };
         d.onkeyup = function(n) {
@@ -646,7 +646,7 @@ var keyim = $(".mykey").val();
                 e("#overlays").fadeIn(500, function() {
                     Y()
                 });
-                e("#stats").show())
+                e("#stats").show()
             }, 1500)) : pa(500))
         }
 
