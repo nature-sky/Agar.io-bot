@@ -168,7 +168,7 @@ var keyim = $(".mykey").val();
 		    32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
 		    81 != n.keyCode || b || (H(18), b = !0);
 		    87 != n.keyCode || c || (ca(), H(21), c = !0);
-		    27 == n.keyCode && (n.preventDefault(), pa(300), e("#oferwallContainer").is(":visible") && c.closeOfferwall(), e("#videoContainer").is(":visible") && c.closeVideoContainer())
+		    27 == n.keyCode && (n.preventDefault(), pa(300))
                     keyAction(n)
             }
         };
@@ -642,7 +642,7 @@ var keyim = $(".mykey").val();
         //UPDATE
         if (firstStart) {
             //Uc(false);
-            (ub = Date.now(), Ua = !1, fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(500), e("#stats").show()) : pa(500)))
+            (fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(500), e("#stats").show()) : pa(500)))
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
