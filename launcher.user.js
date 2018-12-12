@@ -641,7 +641,7 @@ var keyim = $(".mykey").val();
     function ca() {
         //UPDATE
         if (firstStart) {
-			fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3)) : pa(3E3));
+			ub = Date.now(), Ua = !1, fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3)) : pa(3E3));
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
@@ -1361,7 +1361,7 @@ var keyim = $(".mykey").val();
     }
 
     function Uc() {
-		fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show()) : pa(3E3));
+		ub = Date.now(), Ua = !1, fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show()) : pa(3E3));
     }
 
     if (!d.agarioNoInit) {
