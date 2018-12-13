@@ -641,7 +641,7 @@ var keyim = $(".mykey").val();
     function ca() {
         //UPDATE
         if (firstStart) {
-
+            Uc(false);
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
@@ -1387,7 +1387,7 @@ var keyim = $(".mykey").val();
                 dArc = [],
                 dText = [],
                 lines = [],
-                names = ["AIRobot"],
+                names = ["An unamed cell"],
                 firstStart = true;
                 originalName = names[Math.floor(Math.random() * names.length)],
                 sessionScore = 0,
