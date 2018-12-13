@@ -199,7 +199,7 @@ wheel = gb;
         N *= Math.pow(.9, a.wheelDelta / -120 || a.detail || 0);
         window.log("P: " + P)
         //UPDATE
-        0.07 > N && (N = 0.07)
+        0.5 > N && (N = 0.5)
         //1 > N && (N = 1);
         N > 4 / g && (N = 4 / g)
     }
