@@ -158,19 +158,20 @@ var keyim = $(".mykey").val();
             Ia()
         };
         L.onmouseup = function() {};
-        /firefox/i.test(navigator.userAgent) ? document.addEventListener("DOMMouseScroll", gb, !1) : document.body.onmousewheel = gb;
+        /firefox/i.test(navigator.userAgent) ? document.addEventListener("DOMMouseScroll", gb, !1) : document.body.on
+wheel = gb;
         var a = !1,
             b = !1,
             c = !1;
         d.onkeydown = function(n) {
-			//UPDATE
-			if (!window.jQuery('#nick').is(":focus")) {
-			    32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
-			    81 != n.keyCode || b || (H(18), b = !0);
-			    87 != n.keyCode || c || (ca(), H(21), c = !0);
-			    27 == n.keyCode && (n.preventDefault(), pa(300))
-				keyAction(n)
-			}
+            //UPDATE
+            if (!window.jQuery('#nick').is(":focus")) {
+                32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
+                81 != n.keyCode || b || (H(18), b = !0);
+                87 != n.keyCode || c || (ca(), H(21), c = !0);
+                27 == n.keyCode && (n.preventDefault(), pa(300))
+                keyAction(n)
+            }
         };
         d.onkeyup = function(n) {
             32 == n.keyCode && (a = !1);
@@ -197,7 +198,9 @@ var keyim = $(".mykey").val();
         a.preventDefault();
         N *= Math.pow(.9, a.wheelDelta / -120 || a.detail || 0);
         window.log("P: " + P)
-        1 > N && (N = 1);
+        //UPDATE
+        0.07 > N && (N = 0.07)
+        //1 > N && (N = 1);
         N > 4 / g && (N = 4 / g)
     }
 
@@ -223,8 +226,12 @@ var keyim = $(".mykey").val();
     }
 
     function Ia() {
-        ra = (na - h / 2) / g + t;
-        sa = (oa - q / 2) / g + u
+        // UPDATE
+        if (toggle || window.botList[botIndex].name == "Human") {
+            setPoint((na - h / 2) / g + t, (oa - q / 2) / g + u);
+        }
+        //ra = (na - h / 2) / g + t;
+        //sa = (oa - q / 2) / g + u
     }
 
     function eb() {
