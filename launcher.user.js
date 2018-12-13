@@ -167,7 +167,8 @@ wheel = gb;
             //UPDATE
             if (!window.jQuery('#nick').is(":focus")) {
                 32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
-                81 != n.keyCode || b || (H(18), b = !0);
+                //81 != n.keyCode || b || (H(18), b = !0);
+                81 == n.keyCode && (H(18), b = !0);
                 87 != n.keyCode || c || (ca(), H(21), c = !0);
                 27 == n.keyCode && (n.preventDefault(), pa(300))
                 keyAction(n)
