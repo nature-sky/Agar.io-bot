@@ -641,12 +641,12 @@ var keyim = $(".mykey").val();
     function ca() {
         //UPDATE
         if (firstStart) {
-			ub = Date.now(), Ua = !1, fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3)) : pa(3E3));
+
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
             window.log("Dead: " + ~~(getCurrentScore() / 100));
-            Uc();
+            Uc(true);
         }
 
         if (getPlayer().length == 0 && !firstStart) {
@@ -1361,7 +1361,7 @@ var keyim = $(".mykey").val();
     }
 
     function Uc() {
-		ub = Date.now(), Ua = !1, fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show()) : pa(3E3));
+		fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show()) : pa(3E3));
     }
 
     if (!d.agarioNoInit) {
