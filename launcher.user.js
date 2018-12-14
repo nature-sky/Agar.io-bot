@@ -648,6 +648,7 @@ wheel = gb;
     function ca() {
         //UPDATE
         if (firstStart) {
+            
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
@@ -1208,7 +1209,7 @@ wheel = gb;
                     };
                 d.requestAnimationFrame(g)
             }
-        } else e(".agario-profile-panel .progress-bar-star").text(a.d), e(".agario-exp-bar .progress-bar-text").text(a.e + "/" + a.c + " XP"), e(".agario-exp-bar .progress-bar").css("width", (88 * a.e / a.c).toFixed(2) + "%"), b && b()
+        } //else e(".agario-profile-panel .progress-bar-star").text(a.d), e(".agario-exp-bar .progress-bar-text").text(a.e + "/" + a.c + " XP"), e(".agario-exp-bar .progress-bar").css("width", (88 * a.e / a.c).toFixed(2) + "%"), b && b()
     }
 
     function Fb(a) {
@@ -1367,8 +1368,7 @@ wheel = gb;
     }
 
     function Uc() {
-		//fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), e("#stats").show()) : pa(3E3));
-                (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), e("#stats").show()) : pa(3E3));
+		fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show()) : pa(3E3));
     }
 
     if (!d.agarioNoInit) {
