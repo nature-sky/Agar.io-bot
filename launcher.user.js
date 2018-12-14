@@ -1172,7 +1172,8 @@ wheel = gb;
         }
         if (c) {
             var p = +e(".agario-exp-bar .progress-bar-text").first().text().split("index.html")[0],
-                c = +e(".agario-exp-bar .progress-bar-text").first().text().split("index.html")[1].split(" ")[0],
+                //c = +e(".agario-exp-bar .progress-bar-text").first().text().split("index.html")[1].split(" ")[0],
+		c = +e(".agario-exp-bar .progress-bar-text").first().text().split("index.html")[1],
                 n = e(".agario-profile-panel .progress-bar-star").first().text();
             if (n != a.d) Y({
                 e: c,
