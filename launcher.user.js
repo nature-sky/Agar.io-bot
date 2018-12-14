@@ -648,12 +648,11 @@ wheel = gb;
     function ca() {
         //UPDATE
         if (firstStart) {
-            
         }
 
         if (getPlayer().length == 0 && !reviving && ~~(getCurrentScore() / 100) > 0) {
             window.log("Dead: " + ~~(getCurrentScore() / 100));
-            Uc(false);
+            Uc();
         }
 
         if (getPlayer().length == 0 && !firstStart) {
