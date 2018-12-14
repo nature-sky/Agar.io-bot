@@ -169,7 +169,7 @@ wheel = gb;
                 32 != n.keyCode || a || ("nick" != n.target.id && n.preventDefault(), ca(), H(17), a = !0);
                 81 != n.keyCode || b || (H(18), b = !0);
                 87 != n.keyCode || c || (ca(), H(21), c = !0);
-                27 == n.keyCode && (n.preventDefault(), pa(300))
+                27 == n.keyCode && (n.preventDefault(), pa(300), e("#oferwallContainer").is(":visible") && c.closeOfferwall(), e("#videoContainer").is(":visible") && c.closeVideoContainer())
                 keyAction(n)
             }
         };
@@ -1369,7 +1369,7 @@ wheel = gb;
 
     function Uc() {
 		//fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show()) : pa(3E3));
-                nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show();
+		nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show();
     }
 
     if (!d.agarioNoInit) {
