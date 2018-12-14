@@ -1368,7 +1368,8 @@ wheel = gb;
     }
 
     function Uc() {
-		fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show()) : pa(3E3));
+		//fa || V || (vb ? (nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show()) : pa(3E3));
+                nb(d.ab), Yb(), V = !0, e("#overlays").fadeIn(3E3), Y(), e("#stats").show();
     }
 
     if (!d.agarioNoInit) {
