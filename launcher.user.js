@@ -1175,7 +1175,7 @@ wheel = gb;
                 //c = +e(".agario-exp-bar .progress-bar-text").first().text().split("index.html")[1].split(" ")[0],
                 c = +e(".agario-exp-bar .progress-bar-text").first().text().split("index.html")[1],
                 n = e(".agario-profile-panel .progress-bar-star").first().text();
-            if (a.d !== undefined && n != a.d) Y({
+            if (!(a.d === undefined) && n != a.d) Y({
                 e: c,
                 c: c,
                 d: n
