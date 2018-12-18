@@ -3,7 +3,7 @@
 // @namespace   AposLoader
 // @description Grabs latest versions of the bot scripts automatically.
 // @include     http://agar.io/ 
-// @include     http://agario.fun/?ip=140.112.31.200:443
+// @include     http://agario.fun/*
 // @include     https://cdn.jsdelivr.net/*
 // @version     1.4
 // @grant       none
